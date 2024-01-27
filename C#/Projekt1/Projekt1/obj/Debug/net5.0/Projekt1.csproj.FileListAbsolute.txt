@@ -1,0 +1,15 @@
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/bin/Debug/net5.0/Projekt1.deps.json
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/bin/Debug/net5.0/Projekt1.runtimeconfig.json
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/bin/Debug/net5.0/Projekt1.runtimeconfig.dev.json
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/bin/Debug/net5.0/Projekt1.dll
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/bin/Debug/net5.0/ref/Projekt1.dll
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/bin/Debug/net5.0/Projekt1.pdb
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.csproj.AssemblyReference.cache
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.AssemblyInfoInputs.cache
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.AssemblyInfo.cs
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.csproj.CoreCompileInputs.cache
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.dll
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/ref/Projekt1.dll
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.pdb
+/Users/dominikkolaric/Documents/C#/Projekt1/Projekt1/obj/Debug/net5.0/Projekt1.genruntimeconfig.cache

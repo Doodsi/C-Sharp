@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autocommander.MainController">
+   <children>
+      <Pane fx:id="paneContent" layoutX="14.0" layoutY="82.0" prefHeight="342.0" prefWidth="410.0">
+         <children>
+            <Label fx:id="lblCurrent" layoutX="14.0" layoutY="14.0" text="CURRENTLY VIEWING:" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMake" layoutX="14.0" layoutY="47.0" text="Make">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblModel" layoutX="14.0" layoutY="76.0" text="Model">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblYear" layoutX="14.0" layoutY="105.0" text="Year">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEngine" layoutX="14.0" layoutY="134.0" text="Engine">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFuel" layoutX="14.0" layoutY="163.0" text="Fuel">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDrivetrain" layoutX="14.0" layoutY="192.0" text="Drivetrain">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMileage" layoutX="14.0" layoutY="221.0" text="Mileage">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrice" layoutX="14.0" layoutY="249.0" text="Estimated price in EUR">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDelete" cancelButton="true" layoutX="11.0" layoutY="302.0" mnemonicParsing="false" onAction="#DeleteObject" prefHeight="26.0" prefWidth="124.0" text="Delete object" textFill="#bf0808" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneImage" layoutX="440.0" layoutY="82.0" prefHeight="342.0" prefWidth="426.0">
+         <children>
+            <ImageView fx:id="ivCar" fitHeight="316.0" fitWidth="399.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneAddNew" disable="true" layoutX="242.0" layoutY="438.0" prefHeight="201.0" prefWidth="624.0">
+         <children>
+            <Label fx:id="lblAdd" layoutX="11.0" layoutY="13.0" text="Insert new or update existing:" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="453.0" layoutY="74.0" mnemonicParsing="false" onAction="#InsertNewObject" prefHeight="26.0" prefWidth="157.0" text="Insert" />
+            <Button fx:id="btnUpdate" layoutX="453.0" layoutY="103.0" mnemonicParsing="false" onAction="#UpdateExistingObject" prefHeight="26.0" prefWidth="157.0" text="Update" />
+            <Button fx:id="btnCancel" cancelButton="true" layoutX="453.0" layoutY="132.0" mnemonicParsing="false" onAction="#cancelOperation" prefHeight="26.0" prefWidth="157.0" text="Cancel" />
+            <TextField fx:id="tfMake" layoutX="11.0" layoutY="45.0" prefHeight="26.0" prefWidth="212.0" promptText="Make" />
+            <TextField fx:id="tfModel" layoutX="11.0" layoutY="74.0" prefHeight="26.0" prefWidth="212.0" promptText="Model" />
+            <TextField fx:id="tfYear" layoutX="11.0" layoutY="103.0" prefHeight="26.0" prefWidth="212.0" promptText="Year" />
+            <TextField fx:id="tfEngine" layoutX="11.0" layoutY="132.0" prefHeight="26.0" prefWidth="212.0" promptText="Engine" />
+            <TextField fx:id="tfFuel" layoutX="227.0" layoutY="45.0" prefHeight="26.0" prefWidth="212.0" promptText="Fuel (diesel, gas, hybrid, elect.)" />
+            <TextField fx:id="tfDrivetrain" layoutX="227.0" layoutY="74.0" prefHeight="26.0" prefWidth="212.0" promptText="Drivetrain (FWD, RWD, AWD)" />
+            <TextField fx:id="tfMileage" layoutX="227.0" layoutY="103.0" prefHeight="26.0" prefWidth="212.0" promptText="Mileage" />
+            <TextField fx:id="tfPrice" layoutX="227.0" layoutY="132.0" prefHeight="26.0" prefWidth="212.0" promptText="Price (EUR)" />
+            <Label fx:id="lblStatus" alignment="CENTER" layoutX="453.0" layoutY="15.0" prefHeight="18.0" prefWidth="157.0" text="Waiting..." textFill="#018286">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneControls" layoutX="14.0" layoutY="438.0" prefHeight="201.0" prefWidth="212.0">
+         <children>
+            <Label fx:id="lblControls" layoutX="20.0" layoutY="14.0" text="Controls" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnBack" layoutX="14.0" layoutY="45.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="84.0" text="&lt; Previous" />
+            <Button fx:id="btnNext" layoutX="114.0" layoutY="45.0" mnemonicParsing="false" onAction="#goNext" prefHeight="26.0" prefWidth="84.0" text="Next &gt;" />
+            <Button fx:id="btnFirst" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" onAction="#goFirst" prefHeight="26.0" prefWidth="84.0" text="&lt;&lt;&lt; First" />
+            <Button fx:id="btnLast" layoutX="114.0" layoutY="84.0" mnemonicParsing="false" onAction="#goLast" prefHeight="26.0" prefWidth="84.0" text="Last &gt;&gt;&gt;" />
+            <Button fx:id="btnUpdatePane" disable="true" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#showUpdatePane" prefHeight="29.0" prefWidth="186.0" text="Edit current vehicle" />
+            <Button fx:id="btnAddNew" layoutX="13.0" layoutY="158.0" mnemonicParsing="false" onAction="#showInsertPane" prefHeight="29.0" prefWidth="186.0" text="Add new vehicle" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneMain" layoutX="14.0" layoutY="16.0" prefHeight="45.0" prefWidth="852.0">
+         <children>
+            <ComboBox fx:id="cbViewing" layoutX="14.0" layoutY="10.0" onAction="#viewSelected" prefHeight="26.0" prefWidth="282.0" promptText="Select a Vehicle" />
+            <Button fx:id="btnRefresh" layoutX="637.0" layoutY="10.0" mnemonicParsing="false" onAction="#reinitialize" prefHeight="26.0" prefWidth="96.0" text="Reinitialize" textFill="#0fb956" />
+            <Button fx:id="btnLogout" layoutX="742.0" layoutY="10.0" mnemonicParsing="false" onAction="#onLogoutClicked" prefHeight="26.0" prefWidth="96.0" text="Logout" textFill="#9a0707" />
+         </children>
+      </Pane>
+      <Label fx:id="lblRubberDuck" layoutX="14.0" layoutY="657.0" text="(c) 2022 R. D. Softworks Ltd." />
+      <Label fx:id="lblVer" alignment="CENTER_RIGHT" layoutX="830.0" layoutY="657.0" text="v1.0.0" />
+   </children>
+</AnchorPane>
